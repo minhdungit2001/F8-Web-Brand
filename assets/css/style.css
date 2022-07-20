@@ -16,8 +16,36 @@
     color: #fff !important;
 }
 
+.text-center{
+    text-align: center !important;
+}
+
 html{
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.33333333333333%;
+}
+
+.col-two{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
 }
 
 #header{
@@ -30,6 +58,8 @@ html{
     z-index: 1;
 }
 
+
+/* Nav */
 #nav, .subnav{
     list-style-type: none;
 }
@@ -82,6 +112,9 @@ html{
     font-size: 14px;
 }
 
+
+
+/* Header */
 #header .search-btn{
     float: right;
     cursor: pointer;
@@ -128,6 +161,8 @@ html{
     font-size: 15px;
 }
 
+
+/* Content */
 .content-section{
     width: 100%;
     padding: 64px 50px;
@@ -160,11 +195,6 @@ html{
     margin-top: 48px;
 }
 
-.member-item{
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-}
 
 .member-name{
     font-size: 15px;
@@ -207,18 +237,13 @@ html{
     text-align: center;
     line-height: 24px;
 }
+
 .place-list{
     margin-top: 32px;
     padding: 0 48px;
     padding-bottom: 96px;
-    margin-left: -8px;
-    margin-right: -8px;
 }
-.place-item{
-    float:left;
-    width: 33.3333333%;
-    padding: 0 8px;
-}
+
 
 .place-image{
     display: block;
@@ -264,6 +289,60 @@ html{
     color: #000;
 }
 
+.contact-content{
+    margin-top: 48px;
+    padding: 0 256px;
+    width: 100%;
+}
+
+.contact-infor{
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+.contact-infor i[class*="ti-"]{
+    width: 30px;
+}
+
+.form-control{
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+.contact-icon-send{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    margin-top: 10px;
+}
+
+.row .margin-8{
+    margin-top: 8px;
+}
+
+#footer{
+    padding: 64px 16px;
+}
+
+.social-list a{
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.coppyright{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.coppyright a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
 .modal{
     position: fixed;
     display: none;

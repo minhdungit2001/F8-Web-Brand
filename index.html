@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-    <title>Document</title>
+    <title>The Band</title>
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
             <!-- Begin Nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contract</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contract</a></li>
                 <li>
                     <a href="">
                         More 
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merrchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merrchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,7 +48,7 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-header">THE BAND</h2>
                 <p class="section-sub-header">We love music</p>
                 <p class="about-content">
@@ -56,17 +56,17 @@
                 </p>
     
                 <div class="member-list">
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
     
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
     
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
@@ -75,7 +75,7 @@
             </div>
 
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-header text-white">TOUR DATES</h2>
                     <p class="section-sub-header text-white">Remember to book your tickets!</p>
@@ -87,8 +87,8 @@
                     <li>November <span class="quatily">3</span></li>
                 </ul>
 
-                <div class="place-list">
-                    <div class="place-item">
+                <div class="row place-list">
+                    <div class="col col-third">
                         <img src="./assets/img/place/place1.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">New York</p>
@@ -99,7 +99,7 @@
                     </div>
 
                     
-                    <div class="place-item">
+                    <div class="col col-third">
                         <img src="./assets/img/place/place2.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">Paris</p>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="place-item">
+                    <div class="col col-third">
                         <img src="./assets/img/place/place3.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">San Francisco</p>
@@ -122,18 +122,61 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <!-- Contract -->
-            <div class="contact-section">
+            <!-- Contact -->
+            <div id="contact" class="contact-section">
                 <div class="content-section">
                     <h2 class="section-header">CONTACT</h2>
                     <p class="section-sub-header">Fan? Drop a note!</p>
+
+                    <div class="row contact-content">
+                        <div class="col col-two contact-infor">
+                            <p><i class="ti-location-pin">  Chicago, US</i></p>
+                            <p><i class="ti-mobile">  Phone: +00 151515</i></p>
+                            <p><i class="ti-email">  Email: mail@mail.com</i></p>
+                        </div>
+
+                        <div class="col col-two contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-two">
+                                        <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    </div>
+                                    <div class="col col-two">
+                                        <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+    
+                                <div class="row margin-8">
+                                    <div class="col col-full">
+                                        <input type="text" name="" placeholder="Messenge" required id="" class="form-control">
+                                    </div>
+                                </div>
+                                <input class="contact-icon-send" type="submit" value="SEND">
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
                 
+            </div>
+            <!-- End Contact -->
+            <div>
+                <img src="./assets/img/map.jpg" class="col-full" alt="">
             </div>
         </div>
 
         <div id="footer">
-            
+            <div class="social-list text-center">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="coppyright text-center">Powered by <a href="">w3.css</a></p>
+            <div class="clear"></div>
         </div>
 
 
