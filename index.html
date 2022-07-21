@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <title>The Band</title>
 </head>
@@ -18,7 +19,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contract</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More 
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -36,6 +37,9 @@
                 <i class="search-icon ti-search"></i>
             </div>
             <!-- End Search button -->
+            <div id="mobile-menu-js" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
         </div>
 
         <div id="slider">
@@ -56,17 +60,17 @@
                 </p>
     
                 <div class="member-list">
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center member-infor">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
     
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center member-infor">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
     
-                    <div class="col col-third text-center">
+                    <div class="col col-third text-center member-infor">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/team-member/member1.jpg" alt="" class="member-image">
                     </div>
@@ -88,7 +92,7 @@
                 </ul>
 
                 <div class="row place-list">
-                    <div class="col col-third">
+                    <div class="col col-third place-member">
                         <img src="./assets/img/place/place1.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">New York</p>
@@ -99,7 +103,7 @@
                     </div>
 
                     
-                    <div class="col col-third">
+                    <div class="col col-third place-member">
                         <img src="./assets/img/place/place2.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">Paris</p>
@@ -109,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-third">
+                    <div class="col col-third place-member">
                         <img src="./assets/img/place/place3.jpg" alt="" class="place-image">
                         <div class="place-body">
                             <p class="place-name">San Francisco</p>
@@ -138,10 +142,10 @@
                         <div class="col col-two contact-form">
                             <form action="">
                                 <div class="row">
-                                    <div class="col col-two">
+                                    <div class="col col-two contact-infor-form">
                                         <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                     </div>
-                                    <div class="col col-two">
+                                    <div class="col col-two contact-infor-form">
                                         <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                     </div>
                                     <div class="clear"></div>
@@ -219,6 +223,7 @@
     </div>
 
     <script>
+        //Hiện lên madal khi click vào buy button
         const buyBtns = document.querySelectorAll('.js-click-btn')
         const jsModal = document.querySelector('.js-modal')
         const closeModal = document.querySelector('.js-modal-close')
@@ -239,8 +244,30 @@
         modaContainer.addEventListener('click', function(event){
             event.stopPropagation()
         })
+
+        //Đóng mở menu của mobile
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu-js');
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick = function(){
+            var isClose = header.clientHeight === headerHeight;
+            if(isClose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = null;
+            }
+        }
+
+        //Đóng menu khi đã click
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(){
+                header.style.height = null;
+            }
+        }
+
     </script>
 </body>
 </html>
-
-<!-- test git -->

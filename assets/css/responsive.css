@@ -1,0 +1,112 @@
+@media(max-width: 740px){
+    #slider .text-slider{
+        display: none;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    #nav li{
+        display: block;
+        font-size: 14px;
+    }
+
+    #header .menu-icon{
+        font-size: 20px;
+    }
+    
+    #nav>li:hover>a{
+        display: block;
+    }
+
+    #nav>li:first-child{
+        display: inline-block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .search-icon{
+        display: none;
+    }
+    
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    .content-section{
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 124px;
+    }
+
+    .contact-content{
+        padding: 0 3%;
+        width: 104%;
+        margin-right: -8px;
+    }
+
+    .contact-infor{
+        font-size: 18px;
+        line-height: 1.5;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+
+    .contact-infor-form{
+        width: 100%;
+        margin: 4px 0;
+    }
+    
+    .row .margin-8{
+        margin-top: 4px;
+    }
+
+    .about-content{
+        margin: auto 15px;
+    }
+
+    .ticket-list{
+        margin:auto 10px;
+    }
+
+    .place-list{
+        padding: 0 10px;
+        padding-bottom: 96px;
+    }
+    
+    .place-member{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .member-infor{
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .member-image{
+        width: 60%;
+    }
+
+    .social-list a{
+        font-size: 24px;
+    }
+
+    .coppyright{
+        font-size: 12px;
+    }
+
+    .button-pay{
+        width: 95%;
+        font-size: 16px;
+        height: 52px;
+    }
+}
